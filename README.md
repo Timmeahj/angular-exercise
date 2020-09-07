@@ -79,6 +79,7 @@ A POST request to add a friend to your friend list.
 10. Now you will have to bind the data to your form
     - In your app.module.ts, import the FormsModule from @angular/forms. Also add it to the imports array.
     - Add <code>#formName="ngForm"</code> to your form. This will make "formName" a variable which contains all the data of the form in realtime.
+    - Also add <code>#inputName="ngModel"</code> to every input tag.
     - Make sure all your inputs have a name attribute and also put <code>ngModel</code> inside of each input.
     - Test if it works by adding <code>{{ formName.value | json }}</code> at the top of your html. If you take a look at your page and fill in some values, you'll see them update automatically.
 11. The ngModel that's added to the inputs is not complete yet. It's supposed to be used to bind the data to a model.
